@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event</title>
+</head>
+<body>
+
+<form action="/event/add" method="post">
+    <input type="text" name='event' id='event'>
+    <input type="text" name='motor' id='motor'>
+    <button id="send">Submit</button>
+</form>
+    
+<!-- <script>
+let sendbutton = document.body.querySelector('#send');
+sendbutton.addEventListener("click", function (e) {
+    e.preventDefault();
+     let event = document.querySelector('#event').value;
+    let autor = document.querySelector('#motor').value;
+    var params = "event="+event+"&autor="+autor;
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/event/add', true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+            }
+        }
+    }
+    xhr.send(params);
+    
+});
+</script> -->
+</body>
+</html>
